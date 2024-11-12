@@ -82,3 +82,22 @@ footer {
         margin: 10px;
     }
 }
+.projects .details {
+    display: none; 
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.projects button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.projects button:hover {
+    background-color: #0056b3;
+}
