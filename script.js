@@ -17,3 +17,40 @@ buttons.forEach(button => {
 
 
 
+// form valadtion 
+
+//Form elemets 
+function validateForm() {
+   
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+    const message = document.getElementById("message").value;
+   
+    // name 
+    const nameValidate= /^[a-zA-Z\s]+$/;
+    if (!nameValidate.test(name)) {
+        alert("Enter a valid name");
+        return false;
+    }
+
+   // Email
+    const emailValidate = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailValidate.test(email)) {
+        alert("Enter a valid email address.");
+        return false;
+    }
+
+    // password
+    if (password.length < 8) {
+        alert(" You need atleast 8 characters.");
+        return false;
+    }
+
+    if (message.trim() === "") {
+        alert("Please enter a message.");
+        return false;
+    }
+
+    return true;
+}
