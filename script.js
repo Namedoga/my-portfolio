@@ -54,3 +54,14 @@ function validateForm() {
 
     return true;
 }
+
+
+
+
+// Dark mode
+
+
+    const darkModeToggleButton = document.getElementById('dark-mode-toggle');
+    darkModeToggleButton.addEventListener('click', function() {
+        document.body.classList.toggle('dark-mode');
+    });
