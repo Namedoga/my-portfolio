@@ -136,3 +136,7 @@ form {
     background-color: #45a049;
   }
   
+
+  html {
+    scroll-behavior: smooth;
+}
