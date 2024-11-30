@@ -6,7 +6,12 @@ body {
     padding: 10px;
     line-height: 1.0;
     background-color: beige;
+     background-image: url('IMG_4979.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
+
 
 header, footer {
     background-color: #333;
